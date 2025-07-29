@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var correctAnswer = 0
+    @State var correctAnswer = 0
     @State var score = 0
     
     var body: some View {
@@ -59,6 +59,12 @@ struct ContentView: View {
                 score -= 1
             }
         }
+        randomizeCorrectAnswer()
+    }
+    
+    private func randomizeCorrectAnswer() {
+        let randomAnswer = Int.random(in: 0..<3)
+        correctAnswer = randomAnswer
     }
 }
 
