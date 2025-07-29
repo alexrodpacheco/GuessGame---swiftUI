@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  GuessGame-SwiftUI
-//
-//  Created by Alex Rodrigues Pacheco on 29/07/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
