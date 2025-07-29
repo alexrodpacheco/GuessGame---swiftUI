@@ -15,9 +15,7 @@ struct ContentView: View {
                 Text("Score: \(score)")
             }
             Button(action: {
-                if correctAnswer == 0 {
-                    score = score + 1
-                }
+                checkCorrectAnswer(answer: 0)
             },
                    label: {
                     Image("fox")
@@ -28,9 +26,7 @@ struct ContentView: View {
                     
             })
             Button(action: {
-                if correctAnswer == 0 {
-                    score = score + 1
-                }
+                checkCorrectAnswer(answer: 1)
             },
                    label: {
                     Image("shiba")
@@ -41,9 +37,7 @@ struct ContentView: View {
                     
             })
             Button(action: {
-                if correctAnswer == 0 {
-                    score = score + 1
-                }
+                checkCorrectAnswer(answer: 2)
             },
                    label: {
                     Image("cat 2")
@@ -55,6 +49,16 @@ struct ContentView: View {
             })
         }
         .padding()
+    }
+    
+     private func checkCorrectAnswer(answer: Int) {
+        if answer == correctAnswer {
+            score += 1
+        } else {
+            if score != 0 {
+                score -= 1
+            }
+        }
     }
 }
 
