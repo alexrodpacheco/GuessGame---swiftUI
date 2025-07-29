@@ -2,8 +2,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HStack {
+                Spacer()
+            }
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+                   label: {
+                    Image("fox")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .frame(height: 50)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                    
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+                   label: {
+                    Image("shiba")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .frame(height: 50)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                    
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+                   label: {
+                    Image("cat 2")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .frame(height: 50)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                    
+            })
+        }
     }
 }
 
