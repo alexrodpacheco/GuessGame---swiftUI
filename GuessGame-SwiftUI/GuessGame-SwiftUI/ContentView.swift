@@ -3,9 +3,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
+            VStack {
+                Text("?")
+                    .font(.system(size: 40, weight: .bold))
             }
+            .frame(height: 350)
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
                    label: {
                     Image("fox")
